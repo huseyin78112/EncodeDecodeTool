@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="EncodeDecodeTool.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EncodeDecodeTool"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <ScrollViewer>
+            <StackPanel Orientation="Vertical" Margin="8,8,8,8" Spacing="8">
+                <TextBlock FontSize="32" FontWeight="SemiBold" TextWrapping="Wrap">Welcome to Encode &amp; Decode Tool!</TextBlock>
+                <TextBlock TextWrapping="Wrap">Here you can encode &amp; decode some formats! To get started, select an encoder &amp; decoder left side. More encoders &amp; decoders coming soon!</TextBlock>
+                <TextBlock TextWrapping="Wrap">We accept contributions on <Hyperlink NavigateUri="https://github.com/huseyin78112/EncodeDecodeTool">GitHub</Hyperlink>!</TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

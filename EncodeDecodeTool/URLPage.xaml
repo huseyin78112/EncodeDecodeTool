@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="EncodeDecodeTool.URLPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EncodeDecodeTool"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <ScrollViewer>
+            <StackPanel Orientation="Vertical" Margin="8,8,8,8" Spacing="8">
+                <TextBlock FontSize="32" FontWeight="SemiBold" TextWrapping="Wrap">URL Encoder &amp; Decoder</TextBlock>
+                <TextBlock>Decoded</TextBlock>
+                <TextBox HorizontalAlignment="Stretch" x:Name="Decoded" />
+                <TextBlock>Encoded</TextBlock>
+                <TextBox HorizontalAlignment="Stretch" x:Name="Encoded" />
+                <CheckBox x:Name="EncodePath">Encode path</CheckBox>
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <Button x:Name="Encode" Click="Encode_Click">Encode</Button>
+                    <Button x:Name="Decode" Click="Decode_Click">Decode</Button>
+                </StackPanel>
+                <TextBlock>Encoding:</TextBlock>
+                <ComboBox HorizontalAlignment="Stretch" x:Name="URLEncoding">
+                    <ComboBox.Items>
+                        <ComboBoxItem x:Name="Encoding_ASCII">ASCII</ComboBoxItem>
+                        <ComboBoxItem x:Name="Encoding_BigEndianUnicode">Big Endian Unicode</ComboBoxItem>
+                        <ComboBoxItem x:Name="Encoding_Default" IsSelected="True">Default</ComboBoxItem>
+                        <ComboBoxItem x:Name="Encoding_Unicode">Unicode</ComboBoxItem>
+                        <ComboBoxItem x:Name="Encoding_UTF32">UTF-32</ComboBoxItem>
+                        <ComboBoxItem x:Name="Encoding_UTF8">UTF-8</ComboBoxItem>
+                    </ComboBox.Items>
+                </ComboBox>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

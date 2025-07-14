@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36127.28 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncodeDecodeTool", "EncodeDecodeTool\EncodeDecodeTool.csproj", "{B40C403C-A764-48DA-B919-2D6AF7F7B54F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Debug|ARM.ActiveCfg = Debug|ARM
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Debug|ARM.Build.0 = Debug|ARM
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Debug|ARM.Deploy.0 = Debug|ARM
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Debug|ARM64.Build.0 = Debug|ARM64
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Debug|x64.ActiveCfg = Debug|x64
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Debug|x64.Build.0 = Debug|x64
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Debug|x64.Deploy.0 = Debug|x64
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Debug|x86.ActiveCfg = Debug|x86
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Debug|x86.Build.0 = Debug|x86
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Debug|x86.Deploy.0 = Debug|x86
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Release|ARM.ActiveCfg = Release|ARM
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Release|ARM.Build.0 = Release|ARM
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Release|ARM.Deploy.0 = Release|ARM
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Release|ARM64.ActiveCfg = Release|ARM64
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Release|ARM64.Build.0 = Release|ARM64
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Release|ARM64.Deploy.0 = Release|ARM64
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Release|x64.ActiveCfg = Release|x64
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Release|x64.Build.0 = Release|x64
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Release|x64.Deploy.0 = Release|x64
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Release|x86.ActiveCfg = Release|x86
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Release|x86.Build.0 = Release|x86
+		{B40C403C-A764-48DA-B919-2D6AF7F7B54F}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE68FA3B-8139-4B41-A65A-1B30CCEF6483}
+	EndGlobalSection
+EndGlobal
