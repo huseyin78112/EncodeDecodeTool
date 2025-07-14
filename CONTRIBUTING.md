@@ -4,7 +4,7 @@ Welcome! 🎉 We appreciate your interest in contributing to **Encode & Decode T
 
 ## 📌 Before You Begin
 
-- Please make sure you're working on the latest version of the `main` branch.
+- Please make sure you're working on the latest version of the `master` branch.
 - Check existing [issues](https://github.com/huseyin78112/EncodeDecodeTool/issues) to avoid duplication.
 - If you're introducing major changes, consider opening a discussion or issue first.
 
