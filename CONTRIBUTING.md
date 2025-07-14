@@ -17,7 +17,7 @@ Click the "Fork" button at the top of the GitHub page to create your own copy.
 ### 2. Clone Your Fork
 
 ```bash
-git clone https://github.com/huseyin78112/EncodeDecodeTool.git
+git clone https://github.com/yourusername/EncodeDecodeTool.git
 cd encode-decode-tool
 ```
 
