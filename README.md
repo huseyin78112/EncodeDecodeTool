@@ -6,4 +6,5 @@ An application with some encoders &amp; decoders.
 </a>
 
 Contributing
+---
 Please view CONTRIBUTING.md file.
