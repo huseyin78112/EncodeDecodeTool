@@ -13,6 +13,7 @@
                 <TextBlock FontSize="32" FontWeight="SemiBold" TextWrapping="Wrap">Welcome to Encode &amp; Decode Tool!</TextBlock>
                 <TextBlock TextWrapping="Wrap">Here you can encode &amp; decode some formats! To get started, select an encoder &amp; decoder left side. More encoders &amp; decoders coming soon!</TextBlock>
                 <TextBlock TextWrapping="Wrap">We accept contributions on <Hyperlink NavigateUri="https://github.com/huseyin78112/EncodeDecodeTool">GitHub</Hyperlink>!</TextBlock>
+                <Hyperlink NavigateUri="https://encodedecodetool.org">Visit Website</Hyperlink>
             </StackPanel>
         </ScrollViewer>
     </Grid>
