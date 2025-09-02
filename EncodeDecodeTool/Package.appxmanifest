@@ -35,7 +35,7 @@
         DisplayName="Encode &amp; Decode Tool"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="Encode &amp; decode some formats with this tool."
+        Description="Encode &amp; Decode Tool makes it easy to convert your data between different formats. Instantly encode or decode text with support for Base64, URL, IDN (Punycode), and Hex. A simple, fast, and reliable utility for developers, students, and anyone who needs quick encoding and decoding."
         BackgroundColor="#FF006E">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png"  BackgroundColor="#FF006E"/>

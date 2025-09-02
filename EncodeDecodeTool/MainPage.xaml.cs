@@ -50,7 +50,7 @@ namespace EncodeDecodeTool
             }
         }
 
-        private void Navigator_ItemInvoked(Windows.UI.Xaml.Controls.NavigationView sender, Windows.UI.Xaml.Controls.NavigationViewItemInvokedEventArgs args)
+        private void Navigator_ItemInvoked(Microsoft.UI.Xaml.Controls.NavigationView sender, Microsoft.UI.Xaml.Controls.NavigationViewItemInvokedEventArgs args)
         {
             if (args.InvokedItemContainer != null)
             {
