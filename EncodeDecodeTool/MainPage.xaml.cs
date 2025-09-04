@@ -36,8 +36,8 @@ namespace EncodeDecodeTool
             CoreApplicationViewTitleBar titlebar = CoreApplication.GetCurrentView().TitleBar;
             titlebar.ExtendViewIntoTitleBar = true;
             Window.Current.SetTitleBar(AppTitleBar);
-            var titlebar2 = ApplicationView.GetForCurrentView().TitleBar;
-            titlebar2.ButtonBackgroundColor = Colors.Transparent;
+            Utils.SetTheme(Utils.GetThemeSetting());
+            SetCaptionButtonColors();
         }
         private void NavigatePage(
     Type pageType,
@@ -56,6 +56,40 @@ namespace EncodeDecodeTool
             {
                 Type navPageType = Type.GetType(args.InvokedItemContainer.Tag.ToString());
                 NavigatePage(navPageType, args.RecommendedNavigationTransitionInfo);
+            }
+            if (args.IsSettingsInvoked)
+            {
+                NavigatePage(typeof(SettingsPage), args.RecommendedNavigationTransitionInfo);
+            }
+        }
+
+        private void Page_ActualThemeChanged(FrameworkElement sender, object args)
+        {
+            SetCaptionButtonColors();
+        }
+
+        private void SetCaptionButtonColors()
+        {
+            var titlebar = ApplicationView.GetForCurrentView().TitleBar;
+            titlebar.ButtonBackgroundColor = Colors.Transparent;
+            titlebar.ButtonInactiveBackgroundColor = Colors.Transparent;
+            if (this.ActualTheme == ElementTheme.Light)
+            {
+                titlebar.ButtonForegroundColor = Colors.Black;
+                titlebar.ButtonHoverForegroundColor = Colors.Black;
+                titlebar.ButtonPressedForegroundColor = Colors.Gray;
+                titlebar.ButtonHoverBackgroundColor = Color.FromArgb(255, 220, 220, 220);
+                titlebar.ButtonPressedBackgroundColor = Color.FromArgb(255, 200, 200, 200);
+                titlebar.ButtonInactiveForegroundColor = Colors.Gray;
+            }
+            else if (this.ActualTheme == ElementTheme.Dark)
+            {
+                titlebar.ButtonForegroundColor = Colors.White;
+                titlebar.ButtonHoverForegroundColor = Colors.White;
+                titlebar.ButtonPressedForegroundColor = Colors.DarkGray;
+                titlebar.ButtonHoverBackgroundColor = Color.FromArgb(255, 35, 35, 35);
+                titlebar.ButtonPressedBackgroundColor = Color.FromArgb(255, 55, 55, 55);
+                titlebar.ButtonInactiveForegroundColor = Colors.DarkGray;
             }
         }
     }

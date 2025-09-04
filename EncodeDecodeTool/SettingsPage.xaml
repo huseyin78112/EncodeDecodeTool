@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="EncodeDecodeTool.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EncodeDecodeTool"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    xmlns:communitytoolkit="using:CommunityToolkit.WinUI.Controls">
+
+    <Grid>
+        <ScrollViewer>
+            <StackPanel Orientation="Vertical" Margin="8,8,8,8" Spacing="8">
+                <TextBlock FontSize="32" FontWeight="SemiBold" TextWrapping="Wrap">Settings</TextBlock>
+                <communitytoolkit:SettingsExpander Header="Application theme" Description="Select theme to be used in this application">
+                    <communitytoolkit:SettingsExpander.HeaderIcon>
+                        <FontIcon Glyph="&#xE790;" />
+                    </communitytoolkit:SettingsExpander.HeaderIcon>
+                    <communitytoolkit:SettingsExpander.Items>
+                        <communitytoolkit:SettingsCard ContentAlignment="Left">
+                            <muxc:RadioButtons x:Name="ThemeRadioButtons" SelectionChanged="ThemeRadioButtons_SelectionChanged">
+                                <RadioButton x:Name="AppSystemTheme">System</RadioButton>
+                                <RadioButton x:Name="AppLightTheme">Light</RadioButton>
+                                <RadioButton x:Name="AppDarkTheme">Dark</RadioButton>
+                            </muxc:RadioButtons>
+                        </communitytoolkit:SettingsCard>
+                    </communitytoolkit:SettingsExpander.Items>
+                </communitytoolkit:SettingsExpander>
+                <communitytoolkit:SettingsExpander Header="Encode &amp; Decode Tool" Description="Copyright &#xA9; 2025 Huseyin78112. All rights reserved.">
+                    <communitytoolkit:SettingsExpander.HeaderIcon>
+                        <BitmapIcon ShowAsMonochrome="False" UriSource="ms-appx:///Assets/StoreLogo.png" />
+                    </communitytoolkit:SettingsExpander.HeaderIcon>
+                    <communitytoolkit:SettingsExpander.Items>
+                        <communitytoolkit:SettingsCard ContentAlignment="Left">
+                            <StackPanel Spacing="4">
+                                <HyperlinkButton NavigateUri="https://github.com/huseyin78112/EncodeDecodeTool">Source code</HyperlinkButton>
+                                <HyperlinkButton NavigateUri="https://github.com/huseyin78112/EncodeDecodeTool/blob/master/LICENSE.txt">License</HyperlinkButton>
+                                <HyperlinkButton NavigateUri="https://encodedecodetool.org">Website</HyperlinkButton>
+                                <HyperlinkButton NavigateUri="https://encodedecodetool.org/privacy-policy.html">Privacy Policy</HyperlinkButton>
+                            </StackPanel>
+                        </communitytoolkit:SettingsCard>
+                    </communitytoolkit:SettingsExpander.Items>
+                </communitytoolkit:SettingsExpander>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
-    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True" ActualThemeChanged="Page_ActualThemeChanged">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -19,7 +19,7 @@
             <Image VerticalAlignment="Center" HorizontalAlignment="Left" Margin="12,0,0,0" Width="16" Height="16" Source="/Assets/StoreLogo.png" />
             <TextBlock Style="{StaticResource CaptionTextBlockStyle}" VerticalAlignment="Center" Margin="40,0,0,0">Encode &amp; Decode Tool</TextBlock>
         </Grid>
-        <muxc:NavigationView x:Name="Navigator" IsBackButtonVisible="Collapsed" IsSettingsVisible="False" IsPaneOpen="False" ItemInvoked="Navigator_ItemInvoked" Grid.Row="1">
+        <muxc:NavigationView x:Name="Navigator" IsBackButtonVisible="Collapsed" IsSettingsVisible="True" IsPaneOpen="False" ItemInvoked="Navigator_ItemInvoked" Grid.Row="1">
             <muxc:NavigationView.MenuItems>
                 <muxc:NavigationViewItem x:Name="Home" Icon="Home" IsSelected="True" Content="Home" Tag="EncodeDecodeTool.HomePage" />
                 <muxc:NavigationViewItem x:Name="Base64" Content="Base64" Tag="EncodeDecodeTool.B64Page">
