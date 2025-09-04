@@ -9,7 +9,7 @@
   <Identity
     Name="Huseyin78112.EncodeDecodeTool"
     Publisher="CN=75A4AE3E-34DF-4559-8A14-2E9C9B2DC0F7"
-    Version="1.0.6.0" />
+    Version="1.0.7.0" />
 
   <mp:PhoneIdentity PhoneProductId="bcbddc91-fddc-4332-b223-e107debc4fe8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
