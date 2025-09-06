@@ -15,7 +15,7 @@
                 <TextBox HorizontalAlignment="Stretch" x:Name="Decoded" />
                 <TextBlock>Encoded</TextBlock>
                 <TextBox HorizontalAlignment="Stretch" x:Name="Encoded" />
-                <CheckBox x:Name="EncodePath">Encode path</CheckBox>
+                <CheckBox x:Name="EncodePath">Encode path (when checked, for encode option, encoding will not be considered)</CheckBox>
                 <StackPanel Orientation="Horizontal" Spacing="8">
                     <Button x:Name="Encode" Click="Encode_Click">Encode</Button>
                     <Button x:Name="Decode" Click="Decode_Click">Decode</Button>
