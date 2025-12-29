@@ -1,3 +1,5 @@
+# Deprecation Notice
+* This app is deprecated and is no longer being actively maintained.
 # Encode &amp; Decode Tool
 
 Encode &amp; Decode Tool is a simple, fast, and reliable utility to convert your text between different formats.  
